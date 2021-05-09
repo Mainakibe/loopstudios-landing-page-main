@@ -12,6 +12,7 @@
     --DarkGray:hsl(0, 0%, 55%);
     --VeryDarckGray:hsl(0, 0%, 41%);
 }
+/* header */
 header{
     height: 70vh;
     width: 100%;
@@ -58,6 +59,7 @@ article{
     width: 33%;
     margin:30px 0  0 70px;
 }
+/* container */
 .container{
     display: flex;
     flex-direction: column;
@@ -66,6 +68,7 @@ article{
     flex-wrap: wrap;
     width: 100%;
 }
+/* showcase desktop */
 .showcase{ 
     width: 90%;  
     margin-bottom: 100px; 
@@ -86,7 +89,7 @@ article{
     width: 45%;
     top: 49.5rem;
     right: 6rem;
-    padding:50px 60px 0px 50px;
+    padding:35px 60px 0px 50px;
 }
 h3{
     font-family: 'Josefin sans',sans-serif;
@@ -102,6 +105,8 @@ p{
     color: hsl(0, 0%, 55%);
     padding: 10px 0;
 }
+
+/* creations */
 .creations{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -116,6 +121,7 @@ h4{
     line-height: 50px;
     grid-column: 1/4;
 }
+/* creation images desktop */
 .images{
     display: grid;
     grid-gap: 5px;
@@ -295,6 +301,8 @@ button:hover{
     color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
+
+/* footer */
 footer{
     background-color: hsl(0, 0%, 0%);
     height: 20vh;
@@ -351,6 +359,7 @@ span:hover{
     body{
         overflow-x: hidden;
     }
+    /* header */
     header{
         background: url('/images/mobile/image-hero.jpg');
         background-repeat: no-repeat;
@@ -383,6 +392,7 @@ span:hover{
     .container{
         min-width: 100%;
     }
+    /* showcase */
     .showcase{
         display: flex;
         flex-direction: column;
@@ -408,8 +418,8 @@ span:hover{
         background-position: center;
         height: 400px;
         width: 100%;
-        /* align-items: center; */
     }
+    /* creations */
     .creations{
         display: flex;
         flex-direction: column;
@@ -575,7 +585,7 @@ span:hover{
     .btn{
         margin-top: -200px;
     }
-
+/* footer */
     footer{
         display: flex;
         flex-direction: column;
@@ -592,6 +602,8 @@ span:hover{
     .footer-links span{
         padding: 10px 0;
     }
+
+    /* mobile nav */
     .mobile-nav{
         background-color: hsl(0, 0%, 0%);
         display: flex;
@@ -606,7 +618,7 @@ span:hover{
         transition: transform 0.2s; 
     }
     .showMenu{
-        transform: translateY(0);
+        transform: translateY(10%);
     }
     .top{
         display: flex;
