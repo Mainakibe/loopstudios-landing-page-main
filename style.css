@@ -74,10 +74,11 @@ article{
 .showcase-img{
     background: url('/images/mobile/image-interactive.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 70px 0px;
     height: 500px;
     position:relative;
-    right: 18%;
+    display: flex;
+    
 }
 .showcase-text{
     position: absolute; 
@@ -85,7 +86,7 @@ article{
     width: 45%;
     top: 49.5rem;
     right: 6rem;
-    padding:70px 60px 0px 50px;
+    padding:50px 60px 0px 50px;
 }
 h3{
     font-family: 'Josefin sans',sans-serif;
@@ -120,55 +121,146 @@ h4{
     grid-gap: 5px;
     grid-template-columns: repeat(4,1fr);
     grid-column: 1/5;
-    grid-row: 2/3;
-    
+    grid-row: 2/3; 
+}
+.image{
+    padding: 10px 0;
 }
 .deep-earth{
-    background: url('/images/desktop/image-deep-earth.jpg');
+    background:url('/images/desktop/image-deep-earth.jpg');
     background-repeat: no-repeat;
-    height: 480px;
+    height: 450px;
+    width: 90%;
+    position: relative;
+}
+
+.deep-earth:hover{
+    background:rgba(221, 221, 221, 0.6) url('/images/desktop/image-deep-earth.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+}
+.deep-earth:hover h2{
+    opacity: 1;
+    transform: translateY(5px);
+    color: hsl(0, 0%, 0%);
 }
 .night-arcade{
     background-image: url('/images/desktop/image-night-arcade.jpg');
     background-repeat: no-repeat;
-    height: 480px;
+    position: relative;
+    height: 450px;
+    width: 90%;
+}
+.night-arcade:hover{
+    background:rgba(221, 221, 221, 0.8) url('/images/desktop/image-night-arcade.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+}
+.night-arcade:hover h2{
+    opacity: 1;
+    transform: translateY(0);
+    color: hsl(0, 0%, 0%);
 }
 .soccer{
     background-image: url('/images/desktop/image-soccer-team.jpg');
     background-repeat: no-repeat;
-    height: 480px;
+    position: relative;
+    height: 450px;
+    width: 90%;
+}
+.soccer:hover{
+    background:rgba(221, 221, 221, 0.6) url('/images/desktop/image-soccer-team.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+}
+.soccer:hover h2{
+    opacity: 1;
+    transform: translateY(5px);
+    color: hsl(0, 0%, 0%);
 }
 .grid{
     background-image: url('/images/desktop/image-grid.jpg');
     background-repeat: no-repeat;
-    height: 480px;
+    position: relative;
+    height: 450px;
+    width: 90%;
+}
+.grid:hover{
+    background:rgba(221, 221, 221, 0.6) url('/images/desktop/image-grid.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+}
+.grid:hover h2{
+    opacity: 1;
+    transform: translateY(5px);
+    color: hsl(0, 0%, 0%);
 }
 .up-above{
     background-image: url('/images/desktop/image-from-above.jpg');
     background-repeat: no-repeat;
-    height: 480px;
+    position: relative;
+    height: 450px;
+    width: 90%;
+}
+.up-above:hover{
+    background:rgba(221, 221, 221, 0.6) url('/images/desktop/image-from-above.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+}
+.up-above:hover h2{
+    opacity: 1;
+    transform: translateY(5px);
+    color: hsl(0, 0%, 0%);
 }
 .pocket{
     background-image: url('/images/desktop/image-pocket-borealis.jpg');
     background-repeat: no-repeat;
-    height: 480px;
+    position: relative;
+    height: 450px;
+    width: 90%;
+}
+.pocket:hover{
+    background:rgba(221, 221, 221, 0.6) url('/images/desktop/image-pocket-borealis.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+}
+.pocket:hover h2{
+    opacity: 1;
+    transform: translateY(5px);
+    color: hsl(0, 0%, 0%);
 }
 .curiosity{
     background-image: url('/images/desktop/image-curiosity.jpg');
     background-repeat: no-repeat;
-    height: 480px;
+    position: relative;
+    height: 450px;
+    width: 90%;
+}
+.curiosity:hover{
+    background:rgba(221, 221, 221, 0.6) url('/images/desktop/image-curiosity.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+}
+.curiosity:hover h2{
+    opacity: 1;
+    transform: translateY(5px);
+    color: hsl(0, 0%, 0%);
 }
 .fisheye{
     background-image: url('/images/desktop/image-fisheye.jpg');
     background-repeat: no-repeat;
-    height: 480px;
+    position: relative;
+    height: 450px;
+    width: 90%;
 }
 .fisheye:hover{
-    transform: translateX(15px);
-    background: hsl(0, 0%, 41%);
-    
+    background:rgba(221, 221, 221, 0.6) url('/images/desktop/image-fisheye.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
 }
 .fisheye:hover h2{
+    opacity: 1;
+    transform: translateY(5px);
     color: hsl(0, 0%, 0%);
 }
 
@@ -179,7 +271,7 @@ h2{
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     line-height: 30px;
-    position: relative;
+    position: absolute;
     top: 22rem;
     left: 3rem;
 }
@@ -250,6 +342,9 @@ span:hover{
     font-family: 'Alata',sans-serif;
     color: hsl(0, 0%, 55%);
 }
+.mobile-nav{
+    display: none;
+}
 
 /* media queries */
 @media (max-width:768px){
@@ -271,6 +366,7 @@ span:hover{
     }
     .icons{
         display: block;
+        cursor: pointer;
     }
     .close-icon{
         display: none;
@@ -312,7 +408,7 @@ span:hover{
         background-position: center;
         height: 400px;
         width: 100%;
-        align-items: center;
+        /* align-items: center; */
     }
     .creations{
         display: flex;
@@ -327,57 +423,143 @@ span:hover{
     .images{
         display: flex;
         flex-direction: column;
-        /* align-items: center;
-        justify-content: center; */
         width: 90%;
-
+        margin-bottom: 200px;
+    }
+    .image{
+        margin: 0;
+        padding: 10px 0;
     }
     .deep-earth{
         background: url('/images/mobile/image-deep-earth.jpg');
         background-repeat: no-repeat;
         width: 100%;  
+        height: 240px;
     }
+    .deep-earth:hover{
+        background:rgba(221, 221, 221, 0.6) url('/images/mobile/image-deep-earth.jpg');
+        background-repeat: no-repeat;
+        background-blend-mode: lighten; 
+        width: 100%;
+    }
+    .deep-earth:hover h2{
+        opacity: 1;
+        transform: translateY(5px);
+        color: hsl(0, 0%, 0%);
+    }
+    
     .night-arcade{
         background-image: url('/images/mobile/image-night-arcade.jpg');
         background-repeat: no-repeat;
         width: 100%;
-        margin-top: -220px;
+        height: 240px;
+    }
+    .night-arcade:hover{
+        background:rgba(221, 221, 221, 0.8) url('/images/mobile/image-night-arcade.jpg');
+        background-repeat: no-repeat;
+        background-blend-mode: lighten; 
+    }
+    .night-arcade:hover h2{
+        opacity: 1;
+        transform: translateY(0);
+        color: hsl(0, 0%, 0%);
     }
     .soccer{
         background-image: url('/images/mobile/image-soccer-team.jpg');
         background-repeat: no-repeat;
         width: 100%;
-        margin-top: -220px;
+        height: 240px;
+    }
+    .soccer:hover{
+        background:rgba(221, 221, 221, 0.6) url('/images/mobile/image-soccer-team.jpg');
+        background-repeat: no-repeat;
+        background-blend-mode: lighten; 
+    }
+    .soccer:hover h2{
+        opacity: 1;
+        transform: translateY(5px);
+        color: hsl(0, 0%, 0%);
     }
     .grid{
         background-image: url('/images/mobile/image-grid.jpg');
         background-repeat: no-repeat;
         width: 100%;
-        margin-top: -220px;
+        height: 240px;
+    }
+    .grid:hover{
+        background:rgba(221, 221, 221, 0.6) url('/images/mobile/image-grid.jpg');
+        background-repeat: no-repeat;
+        background-blend-mode: lighten; 
+    }
+    .grid:hover h2{
+        opacity: 1;
+        transform: translateY(5px);
+        color: hsl(0, 0%, 0%);
     }
     .up-above{
         background-image: url('/images/mobile/image-from-above.jpg');
         background-repeat: no-repeat;
         width: 100%;
-        margin-top: -220px;
+        height: 240px;
+    }
+    .up-above:hover{
+        background:rgba(221, 221, 221, 0.6) url('/images/mobile/image-from-above.jpg');
+        background-repeat: no-repeat;
+        background-blend-mode: lighten; 
+    }
+    .up-above:hover h2{
+        opacity: 1;
+        transform: translateY(5px);
+        color: hsl(0, 0%, 0%);
     }
     .pocket{
         background-image: url('/images/mobile/image-pocket-borealis.jpg');
         background-repeat: no-repeat;
         width: 100%;
-        margin-top: -220px;
+        height: 240px;
+    }
+    .pocket:hover{
+        background:rgba(221, 221, 221, 0.6) url('/images/mobile/image-pocket-borealis.jpg');
+        background-repeat: no-repeat;
+        background-blend-mode: lighten; 
+    }
+    .pocket:hover h2{
+        opacity: 1;
+        transform: translateY(5px);
+        color: hsl(0, 0%, 0%);
     }
     .curiosity{
         background-image: url('/images/mobile/image-curiosity.jpg');
         background-repeat: no-repeat;
         width: 100%;
-        margin-top: -220px;
+        height: 240px;
+    }
+    .curiosity:hover{
+        background:rgba(221, 221, 221, 0.6) url('/images/mobile/image-curiosity.jpg');
+        background-repeat: no-repeat;
+        background-blend-mode: lighten; 
+    }
+    .curiosity:hover h2{
+        opacity: 1;
+        transform: translateY(5px);
+        color: hsl(0, 0%, 0%);
     }
     .fisheye{
         background-image: url('/images/mobile/image-fisheye.jpg');
         background-repeat: no-repeat;
         width: 100%;
-        margin-top: -220px;
+        height: 240px;
+    }
+    .fisheye:hover{
+        background:rgba(221, 221, 221, 0.6) url('/images/mobile/image-fisheye.jpg');
+        background-repeat: no-repeat;
+        background-blend-mode: lighten; 
+        width: 100%;
+    }
+    .fisheye:hover h2{
+        opacity: 1;
+        transform: translateY(5px);
+        color: hsl(0, 0%, 0%);
     }
     h2{
         text-transform: uppercase;
@@ -410,6 +592,51 @@ span:hover{
     .footer-links span{
         padding: 10px 0;
     }
+    .mobile-nav{
+        background-color: hsl(0, 0%, 0%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: absolute;
+        top: -10rem;
+        height: 115vh;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: transform 0.2s; 
+    }
+    .showMenu{
+        transform: translateY(0);
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 20px 20px;
+        margin-bottom: 100px;   
+    }
+    .close{
+        cursor: pointer;
+    }
+    .link-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .link-items a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Josefin sans',sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        color: hsl(0, 0%, 100%);
+        padding: 10px 20px;
+    }
+    
 }
 
 
